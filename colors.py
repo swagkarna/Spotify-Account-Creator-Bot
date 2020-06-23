@@ -1,10 +1,11 @@
-import platform, os
+from os import system
+from platform import system
 
 try:
-    if platform.system() == 'Windows':
-        os.system('cls')
+    if system() == 'Windows':
+        system('cls')
     else:
-        os.system('clear')
+        system('clear')
 except:
     pass
 
@@ -63,4 +64,4 @@ def b_white():
 
 if __name__ == '__main__':
     print('You are not supposed to run this program.\nThis was made to be a module.')
-    os.system('pause >NUL')
+    system('pause >NUL')
