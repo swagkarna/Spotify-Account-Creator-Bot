@@ -6,6 +6,7 @@ This was made to show you how easy it is to abuse a website like this. People ca
 
 ## Preview
 ![](https://i.imgur.com/w6uwpH6.png)
+![](https://i.imgur.com/ANk2cbq.png)
 
 ## Usage
 Run this command in CMD, terminal or PowerShell (if you don't already have the **requests** module installed):
