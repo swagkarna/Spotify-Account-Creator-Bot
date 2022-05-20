@@ -1,6 +1,6 @@
 from sys import stdout
 from requests import post
-from os import system, _exit, path
+from os import system, path
 from random import choice, randint
 from colors import green, red, reset
 from time import time, sleep, strftime, gmtime
@@ -44,7 +44,7 @@ class Main:
             print('\n%s> %sInvalid input%s.' % (reset(), red(), reset()))
             system('title [Spotify Account Creator] - Exiting . . .')
             sleep(3)
-            _exit(0)
+            exit()
 
         print('%s> %sAmount to create (empty for unlimited)%s: ' % (reset(), green(), reset()), end = '')
         self.amount = str(input())
@@ -57,7 +57,7 @@ class Main:
             print('%s> %sInvalid input%s.' % (reset(), red(), reset()))
             system('title [Spotify Account Creator] - Exiting . . .')
             sleep(3)
-            _exit(0)
+            exit()(0)
 
     def setup(self):
         if path.exists('Proxies.txt'):
@@ -76,7 +76,7 @@ class Main:
         print('%s> %sPaste your proxies inside Proxies.txt%s!' % (reset(), red(), reset()))
         system('title [Spotify Account Creator] - Exiting . . .')
         sleep(3)
-        _exit(0)
+        exit()(0)
 
     def write(self, arg):
         lock.acquire()
@@ -176,7 +176,7 @@ class Main:
             system('pause >NUL')
             print('> Exiting . . .')
             sleep(3)
-            _exit(0)
+            exit()(0)
 
 if __name__ == '__main__':
     main = Main()
